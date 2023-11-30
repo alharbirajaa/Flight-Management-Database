@@ -1,0 +1,30 @@
+Use flight_management;
+CREATE TABLE changed_flights(
+flight_id INT,
+landing_time TIME DEFAULT'00:00:00',
+arrived_time TIME DEFAULT'00:00:00',
+flight_date DATE NOT NULL,
+passenger_lounge VARCHAR(60) DEFAULT 'Undefined'
+);
+CREATE TRIGGER before_update_flights
+BEFORE UPDATE
+ON flight
+FOR EACH ROW
+INSERT INTO changed_flights(flight_id,landing_time, arrived_time,flight_date,passenger_lounge)
+VALUES(OLD.flight_id,OLD.landing_time, OLD.arrived_time, OLD.flight_date, OLD.passenger_lounge);
+create table boarding_safe(
+boardingpass_id INT,
+message VARCHAR(90)
+);
+DELIMITER $$
+CREATE TRIGGER completed_flights
+after insert
+ON boarding
+FOR EACH ROW
+begin
+if (NEW.checked_in='Checked' AND NEW.has_boarded='Boarded')
+THEN
+INSERT INTO boarding_safe(boardingpass_id,message)
+values(NEW.boardingpass_id,'traveled');
+end if;
+end $$

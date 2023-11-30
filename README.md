@@ -15,10 +15,14 @@ This project is a Flight Management Database implemented using MySQL. It aims to
 -Boarding
 
 ## Language Used
--SQL 
+SQL 
 
 ## Software Used
-- MySQL: The project utilizes MySQL as the relational database management system.
+MySQL: The project utilizes MySQL as the relational database management system.
 
 ## Usage
 Change, Delete, or Add any values you need to be added.
+
+## Important Note
+For each query we defined it as “Use flight_management”.
+

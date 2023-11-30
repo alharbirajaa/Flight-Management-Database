@@ -1,0 +1,10 @@
+Use flight_management;
+CREATE TABLE payment(
+payment_id INT PRIMARY KEY,
+payment_method CHAR(100) NOT NULL,
+payment_date DATE NOT NULL,
+passenger_id INT,
+FundamenTAL OF DATABASES CS 311
+Prepared by: Dr.Kajal Nusratullah
+FOREIGN KEY (passenger_id) REFERENCES passenger(passenger_id)
+);

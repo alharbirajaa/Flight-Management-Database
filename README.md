@@ -24,5 +24,5 @@ MySQL: The project utilizes MySQL as the relational database management system.
 Change, Delete, or Add any values you need to be added.
 
 ## Important Note
-For each query we defined it as “Use flight_management”.
+Each query has been defined as “Use flight_management”.
 

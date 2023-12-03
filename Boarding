@@ -13,3 +13,4 @@ FOREIGN KEY (passenger_id) REFERENCES passenger(passenger_id),
 FOREIGN KEY (flight_id) REFERENCES flight(flight_id),
 FOREIGN KEY (payment_id) REFERENCES payment(payment_id)
 );
+

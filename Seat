@@ -1,4 +1,3 @@
-
 Use flight_management;
 CREATE TABLE seat (
  seat_number VARCHAR(30),

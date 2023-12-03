@@ -1,4 +1,3 @@
-
 Use flight_management;
 CREATE TABLE airline(
 airline_id INT PRIMARY KEY ,

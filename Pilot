@@ -1,4 +1,3 @@
-
 Use flight_management;
 CREATE TABLE pilot(
 Pilot_id INT PRIMARY KEY, 

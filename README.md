@@ -1,4 +1,4 @@
-# Flight-Management-Database
+## Flight-Management-Database
 Database Systems Project
 
 ## Overview

@@ -1,3 +1,4 @@
+
 Use flight_management;
 CREATE TABLE passenger(
 passenger_id INT PRIMARY KEY,

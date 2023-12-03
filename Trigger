@@ -1,3 +1,4 @@
+
 Use flight_management;
 CREATE TABLE changed_flights(
 flight_id INT,

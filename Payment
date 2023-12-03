@@ -1,3 +1,4 @@
+
 Use flight_management;
 CREATE TABLE payment(
 payment_id INT PRIMARY KEY,
